@@ -53,3 +53,14 @@ PROJECT1 - Warehouse Wreckage
 	[Functions]
 	- GetStaticMeshComponent()
 	- GetDisplayName()
+	
+* Classes and instances
+	- class: a template or a blueprint for objects. Something that we make the objects from
+	- instance: this is the actual object, derived from the class
+	- objects from the same class will share the same functionality and they can have their own version of the data
+	- benefits:
+		1) sharing functionality between different objects
+		2) if you change data in the class, it will automatically be applied to its instances
+	- you can create a primitive actor (sphere, cube) and convert it to a blueprint class
+	- to create an instance of a blueprint class, you simply drag it into scene or spawn it by blueprint command.
+	- when you change a property in the blueprint class, it will be applied to its instances in the scene
