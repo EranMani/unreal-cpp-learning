@@ -2090,3 +2090,62 @@ LogConfig: CVar [[QualityLevelMapping:high]] deferred - dummy variable created
 [2022.08.21-11.12.14:452][137]AssetCheck: New page: Asset Save: Minimal_Default
 [2022.08.21-11.12.14:452][137]LogContentValidation: Display: Validating World /Game/StarterContent/Maps/Minimal_Default.Minimal_Default
 [2022.08.21-11.13.20:151][521]LogDerivedDataCache: C:/Users/EranM/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:00.013 and deleted 0 file(s) with total size 0 MiB.
+[2022.08.21-11.15.03:731][830]LogAudioMixer: Warning: FMixerPlatformXAudio2: Changing default audio render device to new device: Role=Console, DeviceName=LS49AG95 (NVIDIA High Definition Audio), InstanceID=1
+[2022.08.21-11.15.03:731][830]LogAudioMixer: Display: FMixerNullCallback: Simulating a h/w device callback at [21ms], ThreadID=21104
+[2022.08.21-11.15.04:066][830]LogAudioMixer: Display: Successful Swap new Device is (NumChannels=2, SampleRate=48000, DeviceID={0.0.0.00000000}.{2c5ccf7a-be69-4a9a-997b-5b47ab162dad}, Name=LS49AG95 (NVIDIA High Definition Audio)), Reason=FMixerPlatformXAudio2::OnDefaultRenderDeviceChanged, InstanceID=1, DurationMS=24.06
+[2022.08.21-11.15.04:067][830]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=1
+[2022.08.21-11.15.04:073][831]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=1
+[2022.08.21-11.29.53:001][479]LogAudioMixer: Warning: FMixerPlatformXAudio2: Changing default audio render device to new device: Role=Console, DeviceName=Digital Audio (S/PDIF) (2- High Definition Audio Device), InstanceID=1
+[2022.08.21-11.29.53:001][479]LogAudioMixer: Display: FMixerNullCallback: Simulating a h/w device callback at [21ms], ThreadID=21104
+[2022.08.21-11.29.53:330][479]LogAudioMixer: Display: Successful Swap new Device is (NumChannels=2, SampleRate=48000, DeviceID={0.0.0.00000000}.{227a757b-cba2-4fa4-bf79-b4c235de62bf}, Name=Digital Audio (S/PDIF) (2- High Definition Audio Device)), Reason=FMixerPlatformXAudio2::OnDefaultRenderDeviceChanged, InstanceID=1, DurationMS=15.98
+[2022.08.21-11.29.53:330][479]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=1
+[2022.08.21-11.29.53:337][480]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=1
+[2022.08.21-12.13.20:166][243]LogDerivedDataCache: C:/Users/EranM/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:00.012 and deleted 0 file(s) with total size 0 MiB.
+[2022.08.21-13.13.20:016][966]LogDerivedDataCache: C:/Users/EranM/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:00.013 and deleted 0 file(s) with total size 0 MiB.
+[2022.08.21-14.13.20:068][688]LogDerivedDataCache: C:/Users/EranM/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:00.013 and deleted 0 file(s) with total size 0 MiB.
+[2022.08.21-15.13.20:231][414]LogDerivedDataCache: C:/Users/EranM/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:00.011 and deleted 0 file(s) with total size 0 MiB.
+[2022.08.21-16.06.33:359][928]LogAudioMixer: Warning: FMixerPlatformXAudio2: Changing default audio render device to new device: Role=Console, DeviceName=Speakers (Sound BlasterX Kratos S5), InstanceID=1
+[2022.08.21-16.06.33:360][928]LogAudioMixer: Display: FMixerNullCallback: Simulating a h/w device callback at [21ms], ThreadID=21104
+[2022.08.21-16.06.33:688][928]LogAudioMixer: Display: Successful Swap new Device is (NumChannels=2, SampleRate=48000, DeviceID={0.0.0.00000000}.{a5ccc81b-6da8-43e0-8f53-802d6db43ba5}, Name=Speakers (Sound BlasterX Kratos S5)), Reason=FMixerPlatformXAudio2::OnDefaultRenderDeviceChanged, InstanceID=1, DurationMS=14.53
+[2022.08.21-16.06.33:688][928]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=1
+[2022.08.21-16.06.33:695][929]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=1
+[2022.08.21-16.06.44:760][962]LogAudioMixer: Warning: FMixerPlatformXAudio2: Changing default audio render device to new device: Role=Console, DeviceName=Digital Audio (S/PDIF) (2- High Definition Audio Device), InstanceID=1
+[2022.08.21-16.06.44:760][962]LogAudioMixer: Display: FMixerNullCallback: Simulating a h/w device callback at [21ms], ThreadID=21104
+[2022.08.21-16.06.45:087][962]LogAudioMixer: Warning: FMixerPlatformXAudio2: Changing default audio render device to new device: Role=Console, DeviceName=Speakers (Sound BlasterX Kratos S5), InstanceID=1
+[2022.08.21-16.06.45:087][962]LogAudioMixer: Display: Successful Swap new Device is (NumChannels=2, SampleRate=48000, DeviceID={0.0.0.00000000}.{227a757b-cba2-4fa4-bf79-b4c235de62bf}, Name=Digital Audio (S/PDIF) (2- High Definition Audio Device)), Reason=FMixerPlatformXAudio2::OnDefaultRenderDeviceChanged, InstanceID=1, DurationMS=17.33
+[2022.08.21-16.06.45:087][962]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=1
+[2022.08.21-16.06.45:094][963]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=1
+[2022.08.21-16.06.45:428][964]LogAudioMixer: Display: FMixerNullCallback: Simulating a h/w device callback at [21ms], ThreadID=21104
+[2022.08.21-16.06.45:761][965]LogAudioMixer: Error: XAudio2System->CreateMasteringVoice() -> 0x88960004: XAUDIO2_E_DEVICE_INVALIDATED (line: 345) with Args (NumChannels=2, SampleRate=48000, DeviceID={0.0.0.00000000}.{a5ccc81b-6da8-43e0-8f53-802d6db43ba5} Name=Speakers (Sound BlasterX Kratos S5))
+[2022.08.21-16.06.45:761][965]LogAudioMixer: Warning: FMixerPlatformXAudio2: Changing default audio render device to new device: Role=Console, DeviceName=Digital Audio (S/PDIF) (2- High Definition Audio Device), InstanceID=1
+[2022.08.21-16.06.46:095][966]LogAudioMixer: Warning: FMixerPlatformXAudio2: Changing default audio render device to new device: Role=Console, DeviceName=Speakers (Sound BlasterX Kratos S5), InstanceID=1
+[2022.08.21-16.06.46:424][966]LogAudioMixer: Display: Successful Swap new Device is (NumChannels=2, SampleRate=48000, DeviceID={0.0.0.00000000}.{a5ccc81b-6da8-43e0-8f53-802d6db43ba5}, Name=Speakers (Sound BlasterX Kratos S5)), Reason=FMixerPlatformXAudio2::OnDefaultRenderDeviceChanged, InstanceID=1, DurationMS=15.18
+[2022.08.21-16.06.46:424][966]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=1
+[2022.08.21-16.06.46:431][967]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=1
+[2022.08.21-16.06.46:764][968]LogAudioMixer: Warning: FMixerPlatformXAudio2: Changing default audio render device to new device: Role=Console, DeviceName=Digital Audio (S/PDIF) (2- High Definition Audio Device), InstanceID=1
+[2022.08.21-16.06.46:764][968]LogAudioMixer: Display: FMixerNullCallback: Simulating a h/w device callback at [21ms], ThreadID=21104
+[2022.08.21-16.06.47:093][968]LogAudioMixer: Warning: FMixerPlatformXAudio2: Changing default audio render device to new device: Role=Console, DeviceName=Speakers (Sound BlasterX Kratos S5), InstanceID=1
+[2022.08.21-16.06.47:093][968]LogAudioMixer: Display: Successful Swap new Device is (NumChannels=2, SampleRate=48000, DeviceID={0.0.0.00000000}.{227a757b-cba2-4fa4-bf79-b4c235de62bf}, Name=Digital Audio (S/PDIF) (2- High Definition Audio Device)), Reason=FMixerPlatformXAudio2::OnDefaultRenderDeviceChanged, InstanceID=1, DurationMS=26.54
+[2022.08.21-16.06.47:093][968]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=1
+[2022.08.21-16.06.47:100][969]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=1
+[2022.08.21-16.06.47:429][970]LogAudioMixer: Display: FMixerNullCallback: Simulating a h/w device callback at [21ms], ThreadID=21104
+[2022.08.21-16.06.47:764][970]LogAudioMixer: Display: Successful Swap new Device is (NumChannels=2, SampleRate=48000, DeviceID={0.0.0.00000000}.{a5ccc81b-6da8-43e0-8f53-802d6db43ba5}, Name=Speakers (Sound BlasterX Kratos S5)), Reason=FMixerPlatformXAudio2::OnDefaultRenderDeviceChanged, InstanceID=1, DurationMS=16.77
+[2022.08.21-16.06.47:764][970]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=1
+[2022.08.21-16.06.47:772][971]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=1
+[2022.08.21-16.06.48:775][974]LogAudioMixer: Warning: FMixerPlatformXAudio2: Changing default audio render device to new device: Role=Console, DeviceName=Digital Audio (S/PDIF) (2- High Definition Audio Device), InstanceID=1
+[2022.08.21-16.06.48:775][974]LogAudioMixer: Display: FMixerNullCallback: Simulating a h/w device callback at [21ms], ThreadID=21104
+[2022.08.21-16.06.49:106][974]LogAudioMixer: Display: Successful Swap new Device is (NumChannels=2, SampleRate=48000, DeviceID={0.0.0.00000000}.{227a757b-cba2-4fa4-bf79-b4c235de62bf}, Name=Digital Audio (S/PDIF) (2- High Definition Audio Device)), Reason=FMixerPlatformXAudio2::OnDefaultRenderDeviceChanged, InstanceID=1, DurationMS=17.23
+[2022.08.21-16.06.49:106][974]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=1
+[2022.08.21-16.06.49:114][975]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=1
+[2022.08.21-16.13.20:070][139]LogDerivedDataCache: C:/Users/EranM/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:00.014 and deleted 0 file(s) with total size 0 MiB.
+[2022.08.21-17.13.20:096][857]LogDerivedDataCache: C:/Users/EranM/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:00.012 and deleted 0 file(s) with total size 0 MiB.
+[2022.08.21-17.42.00:532][980]LogAudioMixer: Warning: FMixerPlatformXAudio2: Changing default audio render device to new device: Role=Console, DeviceName=LS49AG95 (NVIDIA High Definition Audio), InstanceID=1
+[2022.08.21-17.42.00:532][980]LogAudioMixer: Display: FMixerNullCallback: Simulating a h/w device callback at [21ms], ThreadID=21104
+[2022.08.21-17.42.00:862][980]LogAudioMixer: Display: Successful Swap new Device is (NumChannels=2, SampleRate=48000, DeviceID={0.0.0.00000000}.{2c5ccf7a-be69-4a9a-997b-5b47ab162dad}, Name=LS49AG95 (NVIDIA High Definition Audio)), Reason=FMixerPlatformXAudio2::OnDefaultRenderDeviceChanged, InstanceID=1, DurationMS=21.33
+[2022.08.21-17.42.00:862][980]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=1
+[2022.08.21-17.42.00:870][981]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=1
+[2022.08.21-17.44.12:060][372]LogAudioMixer: Warning: FMixerPlatformXAudio2: Changing default audio render device to new device: Role=Console, DeviceName=Speakers (Sound BlasterX Kratos S5), InstanceID=1
+[2022.08.21-17.44.12:060][372]LogAudioMixer: Display: FMixerNullCallback: Simulating a h/w device callback at [21ms], ThreadID=21104
+[2022.08.21-17.44.12:389][372]LogAudioMixer: Display: Successful Swap new Device is (NumChannels=2, SampleRate=48000, DeviceID={0.0.0.00000000}.{a5ccc81b-6da8-43e0-8f53-802d6db43ba5}, Name=Speakers (Sound BlasterX Kratos S5)), Reason=FMixerPlatformXAudio2::OnDefaultRenderDeviceChanged, InstanceID=1, DurationMS=14.63
+[2022.08.21-17.44.12:389][372]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=1
+[2022.08.21-17.44.12:396][373]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=1
