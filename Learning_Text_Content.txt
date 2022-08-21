@@ -14,6 +14,7 @@ PROJECT1 - Warehouse Wreckage
 	[Functions]
 	- [EVENT] BeginPlay(): what happens when the play button is pressed / game begins
 	- PrintString()
+	- [KEYBOARD EVENT] SpaceBar() - fire an event when the space bar key is pressed or released
 	
 * Physics
 	- by default, physics are not applied to actors (in order to not cause heavy load on the CPU)
@@ -21,6 +22,17 @@ PROJECT1 - Warehouse Wreckage
 	[Properties]
 	- enable gravity: gravity will not applied to actor. The actor will float in the air
 	- mass: how much something weights, how many kg of substance is there 
+	[Glossary]
+	- force: happens over a certain amount of time
+	- impulse: is instantaneous
+	- force = mass * acceleration
+	- impulse = mass * velocity change
+	
+	[Functions]
+	- AddImpulse()
+		impulse vector: value should be multiplied by the object mass.
+		vel change: ignores the mass entirely and just applies whatever velocity you want
+		
 	
 * Objects and references
 	- objects: something that you want to represent a thing.
