@@ -21,3 +21,23 @@ PROJECT1 - Warehouse Wreckage
 	[Properties]
 	- enable gravity: gravity will not applied to actor. The actor will float in the air
 	- mass: how much something weights, how many kg of substance is there 
+	
+* Objects and references
+	- objects: something that you want to represent a thing.
+		EX: the player, an object in the world with some data that represents what he is
+			[data] experience, level
+			[functionality] fire arrows, jump
+		its a little bit of a mapping between the objects and the functionality
+	- reference: an address that shows where to find this object in the computer's memory. When you find the cube, you can do sort of things like
+				 using functionality
+	[Glossary]
+	- objects: collections of data and functionality
+	- actors: objects that can go in a level
+	- components: objects that can go on an actor
+	- reference: where to find an object
+	- data pin: the input or output data for a node
+	- execution pins: when to run this node
+	
+	[Functions]
+	- GetStaticMeshComponent()
+	- GetDisplayName()
