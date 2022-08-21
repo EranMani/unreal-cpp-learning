@@ -1,1 +1,16 @@
 # This file will contain information during learning process
+
+PROJECT1 - Warehouse Wreckage
+* Blueprint (visual programming) - wire up different components to get a desired result
+	[Glossary]
+	- Event graph: the canvas for the blueprint
+	- Node: a piece of pre-made functionality that can be dropped into the project and be used
+	- Event: a "when" node
+	- Pin: sockets you can connect up to each other
+		* Input pin - when to run the node
+		* Output pin - what to do after
+		* Connection - wires between pins
+		
+	[Functions]
+	- [EVENT] BeginPlay(): what happens when the play button is pressed / game begins
+	- PrintString()
