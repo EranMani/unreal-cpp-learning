@@ -14,3 +14,10 @@ PROJECT1 - Warehouse Wreckage
 	[Functions]
 	- [EVENT] BeginPlay(): what happens when the play button is pressed / game begins
 	- PrintString()
+	
+* Physics
+	- by default, physics are not applied to actors (in order to not cause heavy load on the CPU)
+	- To apply physics to an actor, select it -> physics (details tab) -> check 'simulate physics'
+	[Properties]
+	- enable gravity: gravity will not applied to actor. The actor will float in the air
+	- mass: how much something weights, how many kg of substance is there 
