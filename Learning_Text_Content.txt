@@ -91,3 +91,12 @@ PROJECT1 - Warehouse Wreckage
 	- objects:
 		* actors
 		* components
+		
+* Pawns
+	- A physical representation of the player in the game world
+	- Unreal by default spawning a pawn into the scene and placing it at the location given by the actor 'player start'
+	- Pawn is also an actor
+	
+	[Functions]
+	- GetPlayerPawn(): used for multiplayer games, however by using index 0 we get tge first and only player
+	- GetActorLocation() 
