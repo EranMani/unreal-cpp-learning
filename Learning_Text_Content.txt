@@ -114,3 +114,8 @@ PROJECT1 - Warehouse Wreckage
 	- Substraction is similar, but it involves taking a negative vector, and add that to the other vector
 	- Multiplication (with 2 for example) will make the vector twice the size of the original.
 		The length changes, but direction will be the same
+	- Forward vector: a vector that points in the forward direction after you have rotated it(X axis). It has a length of 1
+	- Right vector: a vector that points in the right direction(Y axis). It has a length of 1
+	- To get the desired vector length, all you need to do is multiply these vectors
+	[Functions]
+	- GetForwardVector()
