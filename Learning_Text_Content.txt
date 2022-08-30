@@ -104,3 +104,13 @@ PROJECT1 - Warehouse Wreckage
 * Control rotation
 	[Functions]
 	- GetControlRotation()
+	
+* Vectors
+	- Mathematically, it is a direction in 3D space, with a magnitude(size)
+	- Programatically, it is a three floating point numbers(x,y,z)
+	- You can perform addition on vectors, creating a new vector from them.
+		For example, getting the position of the player (V1) and vector that points towards another position (V2), will create a new vector 
+		The order of the vectors doesnt matter, you will going to end up with the same location that points to the final target
+	- Substraction is similar, but it involves taking a negative vector, and add that to the other vector
+	- Multiplication (with 2 for example) will make the vector twice the size of the original.
+		The length changes, but direction will be the same
