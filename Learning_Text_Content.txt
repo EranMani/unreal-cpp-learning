@@ -72,3 +72,22 @@ PROJECT1 - Warehouse Wreckage
 	
 	[Functions]
 	- SpawnActorFromClass(): returns the new object that spawned
+	
+* Data types
+	- Integers: whole numbers
+	- float: numbers with decimal points
+	- string: programmer speak for a pieces of text, storing pieces of text in memory
+	- bools: two possible values, true or false
+	[Glossary]
+	- struct: an object that is usually small. Dont use references, just pass them arouund and copy them in memory without worrying about them because they
+			  are so small
+	- data type: the "shape" of the data
+	- objects: collections of data and functionality
+	
+	- structs:
+		* vectors - three floats(x,y,z) to represent position, scale and other things
+		* rotator - three floats as well
+		* transform - location, rotation and scalle of an actor in a scene. A struct that have other structs inside it
+	- objects:
+		* actors
+		* components
