@@ -100,3 +100,7 @@ PROJECT1 - Warehouse Wreckage
 	[Functions]
 	- GetPlayerPawn(): used for multiplayer games, however by using index 0 we get tge first and only player
 	- GetActorLocation() 
+	
+* Control rotation
+	[Functions]
+	- GetControlRotation()
