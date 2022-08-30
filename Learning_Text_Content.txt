@@ -64,3 +64,11 @@ PROJECT1 - Warehouse Wreckage
 	- you can create a primitive actor (sphere, cube) and convert it to a blueprint class
 	- to create an instance of a blueprint class, you simply drag it into scene or spawn it by blueprint command.
 	- when you change a property in the blueprint class, it will be applied to its instances in the scene
+	
+* Spawn actors
+	- Creating an object while playing
+	[Glossary]
+	- transform: location, rotation and scale
+	
+	[Functions]
+	- SpawnActorFromClass(): returns the new object that spawned
