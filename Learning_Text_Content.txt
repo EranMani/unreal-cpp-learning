@@ -131,3 +131,8 @@ PROJECT1 - Warehouse Wreckage
 	- When a component is a child of another component, its position is relative to the position of the parent component
 	- You can add more components to a static mesh, by find its components in the details panel and just drag another static mesh. This will be applied
 	  only to the static mesh that exists in the world. This change will not affect the original static mesh
+	  
+* Variables
+	- Help us to store, manipulate and refer to information
+	- A bit like a box that you label
+	- Each variable has a name, data and a particular type
