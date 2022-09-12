@@ -165,3 +165,9 @@ PROJECT1 - Warehouse Wreckage
 	- object oriented programming: functions live with the data they manipulate
 	- member function: a function on a class, always called on a particular instance
 	- self: a node available in member functions, always points to the current instance
+	
+* Level
+	[Functions]
+	- OpenLevel()
+	- GetCurrentLevelName()
+	- Delay(): can be used only in the event graph, not in functions
