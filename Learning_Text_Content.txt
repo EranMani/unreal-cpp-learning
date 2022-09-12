@@ -142,3 +142,12 @@ PROJECT1 - Warehouse Wreckage
 	- branch: do something or dont, based on a bools
 	- booleans: a yes or no data type
 	- comparison: less than, greater than, equal, etc..
+	
+* Functions
+	- Execute blocks of blueprint that makes the game do things
+	- Many nodes provided in Unreal are functions
+	- Allows to stay organized
+	- Allows to reuse blocks of code
+	- Can create custom functions, by selecting a bunch of nodes and collapse them to a function
+	- Should be written as verbs
+	- Self documenting code: write better names that explains the content of the function, without the need to use comments or documentation to explain what it does
