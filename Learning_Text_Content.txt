@@ -136,3 +136,9 @@ PROJECT1 - Warehouse Wreckage
 	- Help us to store, manipulate and refer to information
 	- A bit like a box that you label
 	- Each variable has a name, data and a particular type
+	
+* Branches
+	[Glossary]
+	- branch: do something or dont, based on a bools
+	- booleans: a yes or no data type
+	- comparison: less than, greater than, equal, etc..
