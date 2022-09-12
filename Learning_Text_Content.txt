@@ -151,3 +151,17 @@ PROJECT1 - Warehouse Wreckage
 	- Can create custom functions, by selecting a bunch of nodes and collapse them to a function
 	- Should be written as verbs
 	- Self documenting code: write better names that explains the content of the function, without the need to use comments or documentation to explain what it does
+	- You can add input and output data for each function
+	- Pure function: a function with no side effects, but only return values. It is a function that will not have observable different about the game.
+					 It will have an observable effect once the results are being used for some greater purpose.
+					 Use the pure function only when you are sure that it wont have any side effects
+	- Often the distinction between pure and non-pure functions are wheather it fits with a verb or with a question mark
+	[Functions]
+	- self: gets the instance of current object
+	
+	[Glossary]
+	- side effect: observable effect of a function
+	- pure function: functions with no side effects
+	- object oriented programming: functions live with the data they manipulate
+	- member function: a function on a class, always called on a particular instance
+	- self: a node available in member functions, always points to the current instance
