@@ -25,3 +25,8 @@ Compiles and editors
 						 
 						 Compiler will use the software Visual Studio
 						 Source code will use the software Visual Studio Code
+						 
+C++ class
+	* To create a new class, go to Tools -> new c++ class -> select between various options -> select its name -> create
+	* Once done, it will open the visual studio code
+	* To recompile the editor binary (make sure to close unreal editor first), go to Terminal -> Run build task -> select task projectnameEditor win64 development build
