@@ -1,1 +1,5 @@
 # This file will contain information during learning process
+
+Auto posses player
+	* To let unreal possess/use our own character instead of the default one, go to:
+		- actor blueprint > search for 'auto' > select player0 at auto possess player option
