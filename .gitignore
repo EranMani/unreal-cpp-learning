@@ -36,6 +36,7 @@ Saved/Config/Windows/*.ini
 # Config consists mostly of shared files except per-user editor settings
 Saved/Config/**/DefaultEditorPerProjectUserSettings.ini
 */Intermediate/CachedAssetRegistry.bin
+*/Intermediate/*
 */Saved/
 */Config/HoloLens
 
@@ -80,4 +81,4 @@ Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
-WarehouseWreckage/Saved/Config/CrashReportClient/UECC-Windows-DF344C9542280312C11C2E88A463693F/CrashReportClient.ini
+ObstacleAssault/Saved/Config/CrashReportClient/UECC-Windows-DF344C9542280312C11C2E88A463693F/CrashReportClient.ini
