@@ -3,3 +3,25 @@
 Auto posses player
 	* To let unreal possess/use our own character instead of the default one, go to:
 		- actor blueprint > search for 'auto' > select player0 at auto possess player option
+		
+Compiles and editors
+	[Glossary]
+	- source code: human readable code (like c++ or blueprint)
+	- binary executable: machine readable code
+	- compiler: translates from human (source) to machine (binary)
+	- source code editor: makes writing code fun
+	
+	* unreal ecosystem - the editor is a piece of software and is one that has already been compiled for us, we already have the executable for that editor.
+					     The editor allows to modify and create the game project using various game assets, like meshes and blueprints.
+					     We can then run the game in a separate standalone executable where it just playes the game
+						 editor -> game assets -> game
+						 
+						 C++ is the bedrock of the editor, and once we change c++ in the editor we need to rebuild the editor binary executable.
+						 source code editor -> source code -> compiler
+						 
+						 The compiler will take the source code, the libraries and functionality already built into unreal - will compile these together,
+						 turn them into binary or output. Either an editor that we can open up and edit the game assets, or it will output a game which
+						 will take the game assets and allow the player to just play the game
+						 
+						 Compiler will use the software Visual Studio
+						 Source code will use the software Visual Studio Code
