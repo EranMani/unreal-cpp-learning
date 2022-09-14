@@ -16,9 +16,8 @@ void AMovingPlatform::BeginPlay()
 {
 	Super::BeginPlay();
 
-	MyInt = 9;
-
-	APlusBFloat = InputFloatA + InputFloatB;
+	MyVector.X = MyX;
+	MyY = MyVector.Y;
 	
 }
 
