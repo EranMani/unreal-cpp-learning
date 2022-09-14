@@ -36,10 +36,11 @@ Unreal C++
 					Its button can be found in the viewport lower right point, an icon of fading cubes. Press that and the recompile will begin
 					Live coding have some bugs, mostly in the area where you compile new variables, override their values, closing and opening the editor-
 						will make the variable disappear. Simply restart the editor, or compile using vscode
+	* BeginPlay() - whatever is written in the function, will be executed as soon as the game starts playing
 	
 C++
-	* header (file.h) - a file to add variables and functions
-	* c++ (file.cpp) - the coding itself (like blueprint eventgraph) will happen in this file 
+	* header (file.h) - a file to add variables and functions. For configuring and declaring what things are in the class
+	* c++ (file.cpp) - the coding itself (like blueprint eventgraph) will happen in this file. Where the actual code lives.
 	* the class name will have the prefix A, which means actor (for example AMovingPlatform)
 	* How to write a variable? -> int32 MyInt = 99; -- bool ShouldPlay = true;
 	* Double check your capitalization and the semicolons
