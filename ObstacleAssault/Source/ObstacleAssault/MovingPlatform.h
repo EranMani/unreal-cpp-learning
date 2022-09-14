@@ -28,4 +28,13 @@ public:
 
 	UPROPERTY(EditAnywhere)
 	bool ShouldPlay = true;
+
+	UPROPERTY(EditAnywhere)
+	float InputFloatA = 0;
+
+	UPROPERTY(EditAnywhere)
+	float InputFloatB = 0;
+
+	UPROPERTY(EditAnywhere)
+	float APlusBFloat = 0;
 };
