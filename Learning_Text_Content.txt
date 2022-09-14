@@ -37,6 +37,10 @@ Unreal C++
 					Live coding have some bugs, mostly in the area where you compile new variables, override their values, closing and opening the editor-
 						will make the variable disappear. Simply restart the editor, or compile using vscode
 	* BeginPlay() - whatever is written in the function, will be executed as soon as the game starts playing
+	* FVector - a variable type for vectors
+	* A suffix - the variable is of actor type
+	* F suffix - the variable is of struct type
+	
 	
 C++
 	* header (file.h) - a file to add variables and functions. For configuring and declaring what things are in the class
@@ -47,3 +51,8 @@ C++
 	* How to make a variable visible in the blueprint editor?
 		UPROPERTY - add UPROPERTY(EditAnywhere), above the variable line
 	* If you override the default values of the variables in the editor, then it will override everything done in C++
+	* When using a struct, we need to use the constructor. The constructor will always have the same name as the data type
+	[Glossary]
+	- constructor: makes a new struct or class value
+	- operator: symbols that do something
+	- dot operator: gets something from within a struct or class
