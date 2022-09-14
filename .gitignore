@@ -36,7 +36,7 @@ Saved/Config/Windows/*.ini
 # Config consists mostly of shared files except per-user editor settings
 Saved/Config/**/DefaultEditorPerProjectUserSettings.ini
 */Intermediate/CachedAssetRegistry.bin
-*/Intermediate/*
+*/Intermediate/
 */Saved/
 */Config/HoloLens
 */.vscode/
