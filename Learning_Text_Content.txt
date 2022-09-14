@@ -30,3 +30,19 @@ C++ class
 	* To create a new class, go to Tools -> new c++ class -> select between various options -> select its name -> create
 	* Once done, it will open the visual studio code
 	* To recompile the editor binary (make sure to close unreal editor first), go to Terminal -> Run build task -> select task projectnameEditor win64 development build
+	
+Unreal C++
+	* Live coding - a way to compile new code fast, within the editor.
+					Its button can be found in the viewport lower right point, an icon of fading cubes. Press that and the recompile will begin
+					Live coding have some bugs, mostly in the area where you compile new variables, override their values, closing and opening the editor-
+						will make the variable disappear. Simply restart the editor, or compile using vscode
+	
+C++
+	* header (file.h) - a file to add variables and functions
+	* c++ (file.cpp) - the coding itself (like blueprint eventgraph) will happen in this file 
+	* the class name will have the prefix A, which means actor (for example AMovingPlatform)
+	* How to write a variable? -> int32 MyInt = 99; -- bool ShouldPlay = true;
+	* Double check your capitalization and the semicolons
+	* How to make a variable visible in the blueprint editor?
+		UPROPERTY - add UPROPERTY(EditAnywhere), above the variable line
+	* If you override the default values of the variables in the editor, then it will override everything done in C++
