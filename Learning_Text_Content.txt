@@ -40,6 +40,8 @@ Unreal C++
 	* FVector - a variable type for vectors
 	* A suffix - the variable is of actor type
 	* F suffix - the variable is of struct type
+	[Functions]
+	- SetActorLocation()
 	
 	
 C++
