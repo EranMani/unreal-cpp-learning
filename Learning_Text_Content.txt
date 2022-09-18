@@ -68,3 +68,9 @@ Game loop
 	- frame: a single picture in a video
 	- frame rate: how many frames per second (FPS)
 	- tick: called every frame. Help us to update the state of the game every single frame
+	
+Scope
+	* How long does the variable live?
+	* Variables of a class instance lives as long as the class does
+	* In a function, the variable is valid between curly braces
+	* You can always know what value is going to be in a local variable, unlike a class variable which can be updated any time from any other function
