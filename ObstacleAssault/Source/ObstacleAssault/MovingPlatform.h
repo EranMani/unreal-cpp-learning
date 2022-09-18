@@ -26,4 +26,7 @@ public:
 	UPROPERTY(EditAnywhere)
 	FVector MyVector = FVector(1,2,3);
 
+	UPROPERTY(EditAnywhere)
+	FVector ScaleVector = FVector(4,4,4);
+
 };
