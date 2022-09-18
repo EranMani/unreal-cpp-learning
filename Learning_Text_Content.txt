@@ -42,6 +42,7 @@ Unreal C++
 	* F suffix - the variable is of struct type
 	[Functions]
 	- SetActorLocation()
+	- SetActorScale3D()
 	
 	
 C++
@@ -58,3 +59,12 @@ C++
 	- constructor: makes a new struct or class value
 	- operator: symbols that do something
 	- dot operator: gets something from within a struct or class
+	
+Game loop
+	* The game engine will take the input from the player
+	* The input information will be used to update the game state
+	* Render it to the display
+	[Glossary]
+	- frame: a single picture in a video
+	- frame rate: how many frames per second (FPS)
+	- tick: called every frame. Help us to update the state of the game every single frame
