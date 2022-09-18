@@ -43,6 +43,7 @@ Unreal C++
 	[Functions]
 	- SetActorLocation()
 	- SetActorScale3D()
+	- GetActorLocation()
 	
 	
 C++
@@ -59,6 +60,8 @@ C++
 	- constructor: makes a new struct or class value
 	- operator: symbols that do something
 	- dot operator: gets something from within a struct or class
+	- expression: fragment of code that produces a value
+	- statement: an action to be performed (like calling a function)
 	
 Game loop
 	* The game engine will take the input from the player
