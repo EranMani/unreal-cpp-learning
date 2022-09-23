@@ -23,4 +23,8 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	UPROPERTY(EditAnywhere, Category="Platform Velocity")
+	// Move one meter per second
+	FVector MoveVelocity = FVector(100,0,0);
+
 };
