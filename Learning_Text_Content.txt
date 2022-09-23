@@ -44,6 +44,7 @@ Unreal C++
 	- SetActorLocation()
 	- SetActorScale3D()
 	- GetActorLocation()
+	- FVector::Dist() - get the distance between 2 vectors
 	
 	
 C++
@@ -55,6 +56,7 @@ C++
 	* How to make a variable visible in the blueprint editor?
 		UPROPERTY - add UPROPERTY(EditAnywhere), above the variable line
 		UPROPERTY(EditAnywhere, Category="Something") - you can also declare a category for the variable to be visible in the editor
+		UPROPERTY(VisibleAnywhere) - expose the variable in editor but it does not allow us to edit it
 	* If you override the default values of the variables in the editor, then it will override everything done in C++
 	* When using a struct, we need to use the constructor. The constructor will always have the same name as the data type
 	[Glossary]
@@ -63,6 +65,10 @@ C++
 	- dot operator: gets something from within a struct or class
 	- expression: fragment of code that produces a value
 	- statement: an action to be performed (like calling a function)
+	- Scope resolution operator (::) - allows to look inside a class, in the same way as the DOT operator allows to look inside an instance of class
+		AMovingPlatform::Tick -> this is the tick that belongs to the moving platform class
+		CurrentLocation.X -> this is the X that belongs to the current location, which is an instance of an FVector. But we can use this to get hold 
+							 of functions that belong to the FVector class, and dont run on a particular instance of that class
 	
 Game loop
 	* The game engine will take the input from the player
