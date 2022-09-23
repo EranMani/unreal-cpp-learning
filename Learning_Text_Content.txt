@@ -54,6 +54,7 @@ C++
 	* Double check your capitalization and the semicolons
 	* How to make a variable visible in the blueprint editor?
 		UPROPERTY - add UPROPERTY(EditAnywhere), above the variable line
+		UPROPERTY(EditAnywhere, Category="Something") - you can also declare a category for the variable to be visible in the editor
 	* If you override the default values of the variables in the editor, then it will override everything done in C++
 	* When using a struct, we need to use the constructor. The constructor will always have the same name as the data type
 	[Glossary]
@@ -71,6 +72,9 @@ Game loop
 	- frame: a single picture in a video
 	- frame rate: how many frames per second (FPS)
 	- tick: called every frame. Help us to update the state of the game every single frame
+	- deltaTime: unreal can tell us how long each frame took to execute.
+				 When multiply something by DeltaTime, it makes hte game "frame rate independent". The game will behave the same on fast and slow
+				 computers
 	
 Scope
 	* How long does the variable live?
