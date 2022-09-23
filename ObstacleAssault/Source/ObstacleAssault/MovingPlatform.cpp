@@ -15,6 +15,8 @@ AMovingPlatform::AMovingPlatform()
 void AMovingPlatform::BeginPlay()
 {
 	Super::BeginPlay();
+
+	StartLocation = GetActorLocation();
 }
 
 // Called every frame
@@ -24,6 +26,9 @@ void AMovingPlatform::Tick(float DeltaTime)
 
 	FVector CurrentLocation = GetActorLocation();
 	CurrentLocation = CurrentLocation + (MoveVelocity * DeltaTime);
+
+	PlatformDistance = FVector::Dist(StartLocation, CurrentLocation);
+
 	SetActorLocation(CurrentLocation);
 }
 

@@ -27,4 +27,9 @@ public:
 	// Move one meter per second
 	FVector MoveVelocity = FVector(100,0,0);
 
+	FVector StartLocation;
+
+	UPROPERTY(VisibleAnywhere, Category="Distance")
+	float PlatformDistance = -1;
+
 };
