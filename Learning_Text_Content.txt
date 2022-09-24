@@ -40,6 +40,7 @@ Unreal C++
 	* FVector - a variable type for vectors
 	* A suffix - the variable is of actor type
 	* F suffix - the variable is of struct type
+	* You can create a blueprint child classes from a C++ classes
 	[Functions]
 	- SetActorLocation()
 	- SetActorScale3D()
