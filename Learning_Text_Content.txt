@@ -45,6 +45,8 @@ Unreal C++
 	- SetActorScale3D()
 	- GetActorLocation()
 	- FVector::Dist() - get the distance between 2 vectors
+	- FVector(instance).GetSafeNormal() - get the normal of the vector
+		(member function, instead of a member variable)
 	
 	
 C++
