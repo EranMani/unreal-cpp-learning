@@ -46,11 +46,14 @@ Unreal C++
 		LogTemp = the type of log category
 		Display = the level of the log, how urgent it is // https://docs.unrealengine.com/4.27/en-US/API/Runtime/Core/Logging/ELogVerbosity__Type/
 		TEXT = a function to tell what message to print // https://cplusplus.com/reference/cstdio/printf/
+	* To print a string variable using UE_LOG, make sure to put the '*' sign before the variable name
+		UE_LOG(LogTemp, Display, TEXT("Here is string: %s"), *MyString);
 	* [SHORTCUT] to open output log, press ~ key twice
 	[Functions]
 	- SetActorLocation()
 	- SetActorScale3D()
 	- GetActorLocation()
+	- GetName()
 	- FVector::Dist() - get the distance between 2 vectors
 	- FVector(instance).GetSafeNormal() - get the normal of the vector
 		(member function, instead of a member variable)
@@ -83,6 +86,8 @@ C++
 		UPROPERTY(VisibleAnywhere) - expose the variable in editor but it does not allow us to edit it
 	* If you override the default values of the variables in the editor, then it will override everything done in C++
 	* When using a struct, we need to use the constructor. The constructor will always have the same name as the data type
+	* FString - create a string variable
+		FString MyString = "My string value";
 	[Glossary]
 	- constructor: makes a new struct or class value
 	- operator: symbols that do something
