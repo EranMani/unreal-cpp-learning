@@ -41,6 +41,12 @@ Unreal C++
 	* A suffix - the variable is of actor type
 	* F suffix - the variable is of struct type
 	* You can create a blueprint child classes from a C++ classes
+	* In order to print output log messages, you need to use the following:
+		UE_LOG(LogTemp, Display, TEXT("message"));
+		LogTemp = the type of log category
+		Display = the level of the log, how urgent it is // https://docs.unrealengine.com/4.27/en-US/API/Runtime/Core/Logging/ELogVerbosity__Type/
+		TEXT = a function to tell what message to print // https://cplusplus.com/reference/cstdio/printf/
+	* [SHORTCUT] to open output log, press ~ key twice
 	[Functions]
 	- SetActorLocation()
 	- SetActorScale3D()
@@ -52,6 +58,7 @@ Unreal C++
 		to new rotation.
 		sweep: should look out for any collisions along the way
 	- GetLastUpdateRotation(blueprint class), from character movement component - get the last frame of rotation value
+	
 
 Play from here (when clicking RMB button)
 	* Allows to spawn the player in the mouse pointed location
