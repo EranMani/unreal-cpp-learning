@@ -52,6 +52,16 @@ Unreal C++
 		to new rotation.
 		sweep: should look out for any collisions along the way
 	- GetLastUpdateRotation(blueprint class), from character movement component - get the last frame of rotation value
+
+Play from here (when clicking RMB button)
+	* Allows to spawn the player in the mouse pointed location
+	* Used for level testing, to test different parts of the level
+	* For this to work, you need to declare the player blueprint as the default pawn option in game mode blueprint, and set the level or project
+	  to that game mode.
+Game mode
+	* an actor that controls the "rules". It tells the game how to do things such as who should spawn where, what class were going to use
+	  for the player, as well as many other classes that define how a game works.
+	* Can be set for the whole project, or a specific level
 	
 	
 C++
