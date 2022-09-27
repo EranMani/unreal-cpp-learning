@@ -37,7 +37,9 @@ void AMovingPlatform::Tick(float DeltaTime)
 	if (PlatformDistance > MoveDistance)
 	{
 		float OverShoot = PlatformDistance - MoveDistance;
-		UE_LOG(LogTemp, Display, TEXT("OverShoot distance: %f"), OverShoot);
+		FString ObjectName = GetName();
+		UE_LOG(LogTemp, Display, TEXT("[%s] OverShoot distance %f"), *ObjectName, OverShoot);
+		//UE_LOG(LogTemp, Display, TEXT("OverShoot distance: %f"), OverShoot);
 		FVector MoveDirection = MoveVelocity.GetSafeNormal();
 		StartLocation = StartLocation + MoveDirection * MoveDistance;
 		SetActorLocation(StartLocation);
