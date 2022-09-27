@@ -17,6 +17,8 @@ void AMovingPlatform::BeginPlay()
 	Super::BeginPlay();
 
 	StartLocation = GetActorLocation();
+
+	
 }
 
 // Called every frame
@@ -34,6 +36,8 @@ void AMovingPlatform::Tick(float DeltaTime)
 	// Set the location of platform to the exact distance limit when reached
 	if (PlatformDistance > MoveDistance)
 	{
+		float OverShoot = PlatformDistance - MoveDistance;
+		UE_LOG(LogTemp, Display, TEXT("OverShoot distance: %f"), OverShoot);
 		FVector MoveDirection = MoveVelocity.GetSafeNormal();
 		StartLocation = StartLocation + MoveDirection * MoveDistance;
 		SetActorLocation(StartLocation);
