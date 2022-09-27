@@ -77,7 +77,20 @@ Game mode
 C++
 	* header (file.h) - a file to add variables and functions. For configuring and declaring what things are in the class
 	* c++ (file.cpp) - the coding itself (like blueprint eventgraph) will happen in this file. Where the actual code lives.
+	* You declare a function in the header file with the following data:
+		what it returns
+		what its name
+		what data it needs
+	  It is like writing an abstract function. Then, in the cpp file, call the function and add the required logic
+	  [EXAMPLE]
+	  header -> void MoveSomething(float DeltaTime);
+	  cpp -> add logic to function
+		void AMovingPlatform::MoveSomething(DeltaTime){
+			// write some logic
+		}
 	* the class name will have the prefix A, which means actor (for example AMovingPlatform)
+	* variables in classes should generally be private. Leave classes to manage their own variables, and we only access them using functions
+	  that the class denotes as being public
 	* How to write a variable? -> int32 MyInt = 99; -- bool ShouldPlay = true;
 	* Double check your capitalization and the semicolons
 	* How to make a variable visible in the blueprint editor?
