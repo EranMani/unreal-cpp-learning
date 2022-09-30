@@ -38,6 +38,8 @@ Unreal C++
 						will make the variable disappear. Simply restart the editor, or compile using vscode
 	* BeginPlay() - whatever is written in the function, will be executed as soon as the game starts playing
 	* FVector - a variable type for vectors
+	* FRotation - a variable type for rotators
+		FRotator CurrentRotation = GetActorRotation();
 	* A suffix - the variable is of actor type
 	* F suffix - the variable is of struct type
 	* You can create a blueprint child classes from a C++ classes
@@ -53,6 +55,8 @@ Unreal C++
 	- SetActorLocation()
 	- SetActorScale3D()
 	- GetActorLocation()
+	- GetActorRotation()
+	- AddActorLocalRotation()
 	- GetName()
 	- FVector::Dist() - get the distance between 2 vectors
 	- FVector(instance).GetSafeNormal() - get the normal of the vector
