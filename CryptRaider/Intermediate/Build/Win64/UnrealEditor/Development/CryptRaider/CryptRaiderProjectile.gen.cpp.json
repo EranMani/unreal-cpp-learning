@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\unreal_projects\\unreal-cpp-learning\\cryptraider\\intermediate\\build\\win64\\unrealeditor\\inc\\cryptraider\\cryptraiderprojectile.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\unreal_projects\\unreal-cpp-learning\\cryptraider\\intermediate\\build\\win64\\cryptraidereditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "d:\\unreal_projects\\unreal-cpp-learning\\cryptraider\\intermediate\\build\\win64\\unrealeditor\\development\\cryptraider\\definitions.cryptraider.h",
+            "d:\\unreal_projects\\unreal-cpp-learning\\cryptraider\\source\\cryptraider\\cryptraiderprojectile.h",
+            "d:\\unreal_projects\\unreal-cpp-learning\\cryptraider\\intermediate\\build\\win64\\unrealeditor\\inc\\cryptraider\\cryptraiderprojectile.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
