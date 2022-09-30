@@ -101,6 +101,12 @@ C++
 	* When using a struct, we need to use the constructor. The constructor will always have the same name as the data type
 	* FString - create a string variable
 		FString MyString = "My string value";
+	* const function - a function that cannot modify the state of the class, and it is actually enforced by the rules of the compiler.
+					   It wont allow to modify the data in any variable in the class. It will throw an error if you try to do so.
+					   Any function that is not marked as const, is not allowed to be called from within a const function.
+					   Using const allows to increase the safety of the code.
+		[EXAMPLE] bool MyFunc() const; 
+		[EXAMPLE] bool AMovingPlatform::MyFunc() const {}
 	[Glossary]
 	- constructor: makes a new struct or class value
 	- operator: symbols that do something
