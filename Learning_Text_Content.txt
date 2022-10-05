@@ -1,1 +1,21 @@
 # This file will contain information during learning process
+
+Light Types
+	* Directional light - used as a sun light, goes into a single direction
+	* Point light - a point source of light
+	* Spot light - useful for trying to illuminate a specific area or a specific object
+	* Rect light - light is emanating from the entirety of the rectangle shape. This would work with office lighting or anything where you want to illuminate
+				   from a larger area rather than from a particular point
+	* Sky light - the light is coming from all directions. 
+				  You need to create a large sphere that will envelop the whole scene, and sky light will use that sphere properties to capture scene
+				  light color.
+				  [NOTE] You can grab one of those spheres from the hidden engine folder
+				  
+	* A useful combination of light will be to the sky light(with the sky sphere object) + directional light.
+	  In the sky sphere blueprint, you can link the directional light and use it to change the properties of the sky sphere.
+	  By linking those two (sky sphere + directional light) in together, the sky sphere should match the angle of this directional light. 
+	  [NOTE] Once you change the directional light, you should check the 'refresh material' property in the sky sphere blueprint
+	  
+Lights
+	* Lumen - a real time global illumination light engine
+	* Lumen works best when lights mobility setting is set to moveable
