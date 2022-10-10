@@ -20,6 +20,23 @@ Lights
 	* Lumen - a real time global illumination light engine
 	* Lumen works best when lights mobility setting is set to moveable
 	
+Variable addresses
+	* We store all of our variables in memory
+	* Variables require memory to store their data
+	* The bigger the struct or classes you have will encompass a lot of data that might require even a few kb of memory per actor
+	* This memory has to live somewhere, and that location is known as an address. An actor needs to have a certain location within this large field
+	  of 0 and 1, and it is allocated to store the data in the actor
+	* Pointers - instead of storing the entirety of an actor data variable to another one, we can create an actor pointer that doesnt store the whole
+				 actor, it just stores the address where you can find an actor. This uses a lot less memory to store an address.
+				 AActor MyActor = ..; ---> [CPP]AActor MyActor = ..;
+				 AActor Pointer YourActor; ---> [CPP]AActor* YourActor;
+				 YourActor = AddressOf(MyActor); ---> [CPP]YourActor = &MyActor;
+				 
+				 AActor* - this is an actor pointer, the address of an actor being stored
+				 &MyActor - get the address of a variable
+				 
+				 This ends up pointing to the original actor, rather than copying the data over, hence the name POINTER
+	
 C++
 	* Inheritance VS Composition - 
 		inheritance: when a child class inherits from a parent calss, the child acquires all behaviors from the parent. Inheritance will make a class
@@ -41,6 +58,11 @@ C++
 				   
 Unreal C++
 	* Actor component - you can add a c++ component to objects
+	* The component is OWNED by the actor. If we want a component to talk to our actor, to get its location and other things, we need to be able to
+	  get a pointer to that actor. We dont want to take a copy of it.
+	[NOTE] DO NOT(!) STORE A COPY OF AN ACTOR DATA INTO A VARIABLE. USE POINTER INSTEAD TO BE MORE EFFICIENT
+	[Functions]
+	* GetOwner(): a function of an actor component which allows to get an owner pointer
 	
 	
 	
