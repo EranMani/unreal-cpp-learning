@@ -19,3 +19,28 @@ Light Types
 Lights
 	* Lumen - a real time global illumination light engine
 	* Lumen works best when lights mobility setting is set to moveable
+	
+C++
+	* Inheritance VS Composition - 
+		inheritance: when a child class inherits from a parent calss, the child acquires all behaviors from the parent. Inheritance will make a class
+					 hierarchy
+					 Person ---  -> Student
+							|--  -> Employee
+		composition: in contrast to inheritance, it enables the creation of complex types by combining objects (components) of other types, rather
+					 than inheriting from a base or parent class. A composition contains instances of other classes that implement the desired functionality
+					 You can imagine a composition as playting with legos, while components are the lego bricks
+		The main difference between them is in the relationship between objects: Is-a VS Has-a
+		They are different in purpose too -
+			inheritance: used to design a class on what it is
+			composition: to design a class on what it does
+	
+	[Glossary]
+	* Inheritance: a child class automatically has all the functionality of the parent. The child "is a" parent
+	* Composition: class A has an instance of class B. It can choose to use its functionality but doesnt have to, it can just choose to take the
+				   bits it wants. Class A "has a" Class B
+				   
+Unreal C++
+	* Actor component - you can add a c++ component to objects
+	
+	
+	
