@@ -12,6 +12,16 @@ Intermediate
 *.VC.db
 *.VC.opendb
 
+*.opensdf
+*.log
+*.sdf
+*.sln
+*.suo
+*\Logs
+Binaries
+DerivedDataCache
+Intermediate
+
 # Precompiled Assets
 SourceArt/**/*.png
 SourceArt/**/*.tga
