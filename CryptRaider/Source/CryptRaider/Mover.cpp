@@ -1,6 +1,5 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-
 #include "Mover.h"
 
 // Sets default values for this component's properties
@@ -30,7 +29,9 @@ void UMover::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponent
 
 	// store the address of an actor that owns this particular component
 	AActor* Owner = GetOwner();
-
-	UE_LOG(LogTemp, Display, TEXT("Mover Owner Address: %u"), Owner);
+	FString OwnerName = Owner->GetActorNameOrLabel();
+	FVector OwnerLocation = Owner->GetActorLocation();
+	FString OwnerLocationString = OwnerLocation.ToCompactString();
+	UE_LOG(LogTemp, Display, TEXT("Mover Owner %s at location: %s"), *OwnerName, *OwnerLocationString);
 }
 
