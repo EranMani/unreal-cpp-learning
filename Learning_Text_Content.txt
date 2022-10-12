@@ -60,9 +60,35 @@ Unreal C++
 	* Actor component - you can add a c++ component to objects
 	* The component is OWNED by the actor. If we want a component to talk to our actor, to get its location and other things, we need to be able to
 	  get a pointer to that actor. We dont want to take a copy of it.
+	* You cant get data from a pointer itself. 
+		float MyFloat = 5;
+		float* YourFloat = &MyFloat;
+		float FloatVlaue = *YourFloat
+		
+		By using the '*' in front of a pointer, you can get the value at this location
+	* Dereferencing - to get the data from a pointer of an actor, its pointer needs to dereferenced 
+		AActor* Owner = GetOwner();
+		FString Name = (*Owner).GetActorNameOrLabel();
+		UE_LOG(LogTemp, Display, TEXT("Mover Owner: %s"), *Name)
+		
+	* Another way to make the dereferncing more compact, is to use the arrow sign
+		AActor* Owner = GetOwner();
+		FString Name = Owner->GetActorNameOrLabel();
+		
+	* Use the arrow sign if you got a pointer
+	  Use the dot operator if you are using a struct like FString or FVector
+	  
+	[EXAMPLE]
+	AActor* Owner = GetOwner();
+	FString OwnerName = Owner->GetActorNameOrLabel();
+	FVector OwnerLocation = Owner->GetActorLocation();
+	FString OwnerLocationString = OwnerLocation.ToCompactString();
+	UE_LOG(LogTemp, Display, TEXT("Mover Owner %s at location: %s"), *OwnerName, *OwnerLocationString);
+		
 	[NOTE] DO NOT(!) STORE A COPY OF AN ACTOR DATA INTO A VARIABLE. USE POINTER INSTEAD TO BE MORE EFFICIENT
 	[Functions]
 	* GetOwner(): a function of an actor component which allows to get an owner pointer
+	* GetActorNameOrLabel(): return the name of the actor as a string
 	
 	
 	
