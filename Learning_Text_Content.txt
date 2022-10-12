@@ -90,5 +90,39 @@ Unreal C++
 	* GetOwner(): a function of an actor component which allows to get an owner pointer
 	* GetActorNameOrLabel(): return the name of the actor as a string
 	
+	[C++ Compilation steps]
+	* Start with the code -> C++ files, header files, etc. These get fed into a tool called the UNREAL HEADER TOOL
+	* This tool is responsible for taking all the unreal specific pieces of syntax, and using them to generate more C++ code.
+	  It converts all of its Unreal specific stuff (UProperty, UClass), into actual C++
+	* Once it got the actual C++, it can be fed into a standard C++ compilation process, which takes 3 steps:
+		1) Deal with the preprocessing step. It actually only deals with lines that start with a hash (#include)
+		2) Compiler - it takes a code and converts it into executable binary, but it doesnt quite complete the step because it only does it on individual
+		   C++, known as translation units, basically C++ files.
+		   It takes a C++ file and translates that into binary individually, each individual C++ file
+		3) Linker - brings all of that together and outputs a single executable that we can actually run
+	
+	* Why do we have such a complicated process?
+		- The idea is that it speeds up our compilation time because, if you only make a change in a certain file, you dont need to run the entirety
+		  compliation process. All you have to do is run the bits involving the file
+		  
+	[EXAMPLE]
+	game.cpp (#include "math.h", void MyGame() {Add(1,1);})
+	math.h (int Add(int A, int B);)
+	math.cpp (int Add(int A, int B) {return A + B;})
+	
+	PREPROCESSESOR STEP - deals with any preprocesser directives, which are things that begin with a hash - > #include "math.h"
+		- it takes the game.cpp and the math.h, and combines them together to create a new output file called game.i (game.include). This will include the
+		  definition from math.h.
+		  So now the game.i got a definition for the ADD operation.
+		- run the preprocessor step on math.cpp will not change anything because this file doesnt have any preprocessor directives
+		
+	COMPILATION STEP  
+		- it takes that C++ in each individual file and converts it into binary, but its not complete binary because for example game.cpp
+		  doesnt actually know how to implement ADD, it just knows the shape of that function. This will be filled by the linker
+		
+	LINKER STEP 
+		- takes the binary created for the game.obj file, and the binary created for the math file and bring them together to make a game.
+		- it will combine the binary for both files, and finally is a complete executable that we can run, because its got the definition for everything
+		  it needs
 	
 	
