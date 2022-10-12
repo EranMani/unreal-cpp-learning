@@ -89,6 +89,7 @@ Unreal C++
 	[Functions]
 	* GetOwner(): a function of an actor component which allows to get an owner pointer
 	* GetActorNameOrLabel(): return the name of the actor as a string
+	* VInterpConstantTo() - interpolates a vector from current to target with constant step
 	
 	[C++ Compilation steps]
 	* Start with the code -> C++ files, header files, etc. These get fed into a tool called the UNREAL HEADER TOOL
@@ -124,5 +125,8 @@ Unreal C++
 		- takes the binary created for the game.obj file, and the binary created for the math file and bring them together to make a game.
 		- it will combine the binary for both files, and finally is a complete executable that we can run, because its got the definition for everything
 		  it needs
+		  
+	[NOTE] The 'include' line allows us to copy in the definitions from a particular file
+		#include math
 	
 	
