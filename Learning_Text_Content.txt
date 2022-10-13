@@ -110,6 +110,7 @@ Unreal C++
 	* GetActorNameOrLabel(): return the name of the actor as a string
 	* VInterpConstantTo() - interpolates a vector from current to target with constant step
 	* GetComponentRotation()
+	* GetWorld()	
 	
 	[C++ Compilation steps]
 	* Start with the code -> C++ files, header files, etc. These get fed into a tool called the UNREAL HEADER TOOL
@@ -148,5 +149,17 @@ Unreal C++
 		  
 	[NOTE] The 'include' line allows us to copy in the definitions from a particular file
 		#include math
-	
+		
+	* ULevel
+		- a collection of the actors that we should bring into the UWorld
+		- you may load in multiple levels into a single world. That is because often we have these streaming levels, a very large levels where we
+		  dont want to load everything, every actor into the level in one go for performance reasons. So we split it up into multiple levels and that
+		  allows to bring in only parts of the scene as they are required
+		
+	* UWorld
+		- the type/class for basically the environment that we see when we play a game
+		- the world is the top level object representing a map or a sandbox, in which actors and components will exist and can be rendered
+		- it allows us to do line tracing. We can use a line trace by channel or line trace multi channel, which allows us to get hold of that
+		  first object hit or all of the objects hit by a line trace
+		- on every component and every actor, there is a function called GetWorld() which returns a POINTER to an object of type UWorld
 	
