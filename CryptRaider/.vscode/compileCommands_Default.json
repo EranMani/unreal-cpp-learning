@@ -45,6 +45,16 @@
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Source"
 	},
 	{
+		"file": "D:\\Unreal_Projects\\unreal-cpp-learning\\CryptRaider\\Source\\CryptRaider\\Grabber.cpp",
+		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe\" @D:\\Unreal_Projects\\unreal-cpp-learning\\CryptRaider\\.vscode\\compileCommands_Default\\CryptRaider.211.rsp",
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "D:\\Unreal_Projects\\unreal-cpp-learning\\CryptRaider\\Source\\CryptRaider\\Grabber.h",
+		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe\" @D:\\Unreal_Projects\\unreal-cpp-learning\\CryptRaider\\.vscode\\compileCommands_Default\\CryptRaider.211.rsp",
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Source"
+	},
+	{
 		"file": "D:\\Unreal_Projects\\unreal-cpp-learning\\CryptRaider\\Source\\CryptRaider\\Mover.cpp",
 		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe\" @D:\\Unreal_Projects\\unreal-cpp-learning\\CryptRaider\\.vscode\\compileCommands_Default\\CryptRaider.211.rsp",
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Source"
