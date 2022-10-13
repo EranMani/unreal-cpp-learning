@@ -36,6 +36,9 @@ Variable addresses
 				 &MyActor - get the address of a variable
 				 
 				 This ends up pointing to the original actor, rather than copying the data over, hence the name POINTER
+				 
+Unreal
+	* Scene component - a component that has a transform and can be attached to other components
 	
 C++
 	* Inheritance VS Composition - 
@@ -90,6 +93,7 @@ Unreal C++
 	* GetOwner(): a function of an actor component which allows to get an owner pointer
 	* GetActorNameOrLabel(): return the name of the actor as a string
 	* VInterpConstantTo() - interpolates a vector from current to target with constant step
+	* GetComponentRotation()
 	
 	[C++ Compilation steps]
 	* Start with the code -> C++ files, header files, etc. These get fed into a tool called the UNREAL HEADER TOOL
