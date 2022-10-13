@@ -39,6 +39,22 @@ Variable addresses
 				 
 Unreal
 	* Scene component - a component that has a transform and can be attached to other components
+	* Line trace - create a line (like raycast), which returns either all of the objects that the line intersected with on its path to the end, or you can
+				   just get the first object that it hit
+	* Shape trace (sphere trace) - sweep a sphere through the world to the end point. If it intersected with anything along the way, then that is something 
+								   that the trace will hit.
+								   By using a sphere trace, you will get more accurate hit results because you can expand its radius
+	* Trace channel - creates a list of objects that can respond to the trace and others might want to ignore it entirely
+		How to add a custom trace channel? -- go to project settings -> collisions -> trace channels -> new trace channel
+	* Collisions:
+		- you can enable a custom preset to get more control
+		- when enabling collision:
+			1) query - things like line traces and sphere trace and sweeps, etc
+			2) physics - the simulation of physics and whether it bounces off other objects
+		- types of collision responses:
+			1) ignore - this physics body will ignore the interaction
+			2) overlap - create an overlap event
+			3) block - create an hit event
 	
 C++
 	* Inheritance VS Composition - 
