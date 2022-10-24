@@ -119,6 +119,26 @@ C++
 			
 			- symbol '*' means that this is a pointer to a UActor
 			- symbol '&' means that this is a reference to a UActor
+			
+		* The real place that references shine is in parameters to functions. Every time you create a parameter (float DeltaTime), you are taking able
+		  copy of that original float and passing it into the function.
+		  Instead of doing that, what we might want to do is take a reference to it and pass that in instead.
+		  You pass a reference variable, its address to the function, so when you access it you are actually accessing the original piece of memory and
+		  not an empty copy.
+		  If you change that reference parameter inside the function, it will affect the original variable as well
+		  [NOTE] IF YOU USE THE KEYWORD 'CONST' BEFORE THE REFERENCE, IT WONT LET YOU CHANGE THE CONTENT OF THAT REFERENCE VARIABLE.
+				 YOU CAN ONLY USE IT, READ IT, SEE WHAT IS IN THERE
+		  [NOTE] if we are trying to pass a variable in, in an efficient way where we dont want to take a copy, then we will always use the 'const'
+				 keyword as well as using a reference, because this prevents us from accidentally changing that variable content
+		  [NOTE] if you see any parameters that are a reference but arent marked as const, then you can pretty much assume that somebody intended to use 
+				 that as an out parameter
+		  [NOTE] if you see a variable declared and not given a value and instantly passed into a function, you can expect the function to put
+				 the value in for you
+				 Out parameters are mainly about 'returning' multiple values from a function
+				 
+		   EXAMPLE:
+				void PrintDamage(const float& Damage);
+				bool HasDamage(float& OutDamage); --> The use of keyword 'Out' means its an output parameter
 	
 	[Glossary]
 	* Inheritance: a child class automatically has all the functionality of the parent. The child "is a" parent
