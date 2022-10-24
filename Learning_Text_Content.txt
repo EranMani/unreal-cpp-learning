@@ -110,7 +110,10 @@ Unreal C++
 	* GetActorNameOrLabel(): return the name of the actor as a string
 	* VInterpConstantTo() - interpolates a vector from current to target with constant step
 	* GetComponentRotation()
+	* GetComponentLocation()
 	* GetWorld()	
+	* GetForwardVector()
+	* DrawDebugLine()
 	
 	[C++ Compilation steps]
 	* Start with the code -> C++ files, header files, etc. These get fed into a tool called the UNREAL HEADER TOOL
