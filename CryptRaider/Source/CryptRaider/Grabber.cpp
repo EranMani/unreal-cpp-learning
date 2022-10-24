@@ -31,14 +31,25 @@ void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompone
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
-	FVector Start = GetComponentLocation();
-	FVector End = Start + GetForwardVector() * MaxGrabDistance;
-	DrawDebugLine(GetWorld(), Start, End, FColor::Red);
+	float Damage;
+	// Send Damage as reference to function. This function will alter the variable content
+	if(HasDamage(Damage))
+	{	
+		// Without the ability to modify the referenced variable content, print it to console
+		PrintDamage(Damage);
+	}
 
-	float Damage = 0;
-	float& DamageRef = Damage;
-	DamageRef = 5;
+	
+}
+
+void UGrabber::PrintDamage(const float& Damage)
+{
 	UE_LOG(LogTemp, Display, TEXT("Damage is: %f"), Damage);
-	UE_LOG(LogTemp, Display, TEXT("DamageRef is: %f"), DamageRef);
+}
+
+bool UGrabber::HasDamage(float& OutDamage)
+{
+	OutDamage = 5;
+	return true;
 }
 
