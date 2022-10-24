@@ -70,6 +70,56 @@ C++
 			inheritance: used to design a class on what it is
 			composition: to design a class on what it does
 	
+	* Pointers VS references 
+		- just a memory address. They both store a reference to where another variable can be found
+		- difference come down to whether they can be resassigned, can they point to a different address after they have first been created?
+			pointer: YES. you can change a pointer to point to a new memory address (a new actor, component)
+			reference: NO. can only be setup once when you first create it to point to another variable. It cant then be changed again
+					   This is a safety feature because repointing variables can lead to problems where those variables might disappear or
+					   where you set that pointer to null
+		- null pointer is a pointer that points to nothing, and trying to do stuff with a pointer that sets to nothing can actually crash the engine
+		- with references because you have to give them a value when you first create them, they cant be null so you cannot get these null pointer crashes
+		- to access a content of a pointer you have to use some special syntax : *ActorPtr. You have to use this star in front of the pointer to make sure
+		  you are getting the value in the pointer, not the memory address. With references because you never really need to get hold of the memory address,
+		  you can just use the variable as if it was the variable its pointing to. You dont have to use any special syntax
+		- with pointers you get hold of the address automatically. When you use the variable with a reference, you have to use a special syntax to do that.
+		  you have to use '&' and it will get you basically the same address as the original variable
+		- you can assign the address and use the address of '&' to do that. With reference this isnt allowed, so there is no syntax to it
+		- If you want to change the actual value that were pointing to (not the address), you got again to use some special syntax. You have to put that
+		  star and then assign something so the actor pointer you assign to the star actor pointer.
+		  With references because you cant change the actual adress, you dont need any extra syntax
+		- Examples
+			float Damage = 0;   [dont have to take the address. It automatically knows that this is a reference and this is a variable]
+			float& DamageRef = Damage [dont have to create a copy of the original Damage value]
+			[float&] -> the '&' means it is a reference to a float, not a new float itself
+			
+			The two variables are pointing to the same piece of memory. They are the same variable, but with different names.
+			This has the benefit of not needing a copy, just like a pointer, but it also has a lot more benefits because it is much easier to use
+		
+		- [NOTE] AS LONG AS WE DONT NEED TO REPOINT ANYTHING, USING REFERENCES IS GENERALLY PREFERABLE
+			
+		
+									POINTERS          |    REFERENCES
+		-- ACCESING CONTENTS       *ActorPtr                ActorRef
+		-- ACCESING ADDRESS         ActorPtr               &ActorRef
+		-- CHANGING THE ADDRESS    ActorPtr = &Actor        NOT ALLOWED
+		-- CHANGING THE VALUE      *ActorPtr = Actor       ActorRef = Actor
+	
+		* The & VS * symbols in context
+			[EXAMPLE 1]
+			- CopyActor = *ActorPtr;
+			- ActorAddress = &Actor;
+			
+			- symbol '*' means were getting the contents at actor pointer
+			- symbol '&' means getting the address of that variable. Its getting the address of the actor or the address pointed to by the reference
+			
+			[EXAMPLE 2]
+			- UActor* ActorPtr;
+			- UActor& ActorRef;
+			
+			- symbol '*' means that this is a pointer to a UActor
+			- symbol '&' means that this is a reference to a UActor
+	
 	[Glossary]
 	* Inheritance: a child class automatically has all the functionality of the parent. The child "is a" parent
 	* Composition: class A has an instance of class B. It can choose to use its functionality but doesnt have to, it can just choose to take the
