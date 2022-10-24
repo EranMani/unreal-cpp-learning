@@ -73,3 +73,11 @@ Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+Binaries/
+Intermediate/
+Saved/
+ProjectName.opensdf
+ProjectName.sdf
+ProjectName.sln
+ProjectName.v12.suo
