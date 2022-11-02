@@ -184,6 +184,7 @@ Unreal C++
 	* GetWorld()	
 	* GetForwardVector()
 	* DrawDebugLine()
+	* SweepSingleByChannel()
 	
 	[C++ Compilation steps]
 	* Start with the code -> C++ files, header files, etc. These get fed into a tool called the UNREAL HEADER TOOL
@@ -235,4 +236,9 @@ Unreal C++
 		- it allows us to do line tracing. We can use a line trace by channel or line trace multi channel, which allows us to get hold of that
 		  first object hit or all of the objects hit by a line trace
 		- on every component and every actor, there is a function called GetWorld() which returns a POINTER to an object of type UWorld
+		
+	* FQuat::Identity - basically means that this is a no rotation
 	
+	* FCollisionShape::MakeSphere - create a collision in a sphere shape, with a given radius value
+	
+	[NOTE] IN ORDER FOR A SWEEP TO WORK, THE OBJECT THAT YOU WANT TO FIND MUST PUT THE COLLISION RESPONSE OF THE COLLISION TYPE TO BLOCK, NOT IGNORE
