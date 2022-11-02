@@ -242,3 +242,8 @@ Unreal C++
 	* FCollisionShape::MakeSphere - create a collision in a sphere shape, with a given radius value
 	
 	[NOTE] IN ORDER FOR A SWEEP TO WORK, THE OBJECT THAT YOU WANT TO FIND MUST PUT THE COLLISION RESPONSE OF THE COLLISION TYPE TO BLOCK, NOT IGNORE
+	
+	* Expose a function from a c++ class into a blueprint - 
+		UPROPERTY - for exposing variables
+		UFUNCTION - for exposing functions
+		BLUEPRINT CALLABLE - this function now becomes a node that blueprint has access to
