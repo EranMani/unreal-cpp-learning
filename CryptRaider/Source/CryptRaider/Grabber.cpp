@@ -31,25 +31,28 @@ void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompone
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
-	float Damage;
-	// Send Damage as reference to function. This function will alter the variable content
-	if(HasDamage(Damage))
-	{	
-		// Without the ability to modify the referenced variable content, print it to console
-		PrintDamage(Damage);
+	FVector Start = GetComponentLocation();
+	FVector End = Start + GetForwardVector() * MaxGrabDistance;
+	DrawDebugLine(GetWorld(), Start, End, FColor::Red);
+
+	FCollisionShape Sphere = FCollisionShape::MakeSphere(GrabRadius);
+	FHitResult HitResult;
+	bool HasHit = GetWorld()->SweepSingleByChannel(HitResult, 
+									 Start, End, 
+									 FQuat::Identity, 
+									 ECC_GameTraceChannel2,
+									 Sphere);
+
+	if (HasHit)
+	{
+		AActor* HitActor = HitResult.GetActor();
+		UE_LOG(LogTemp, Display, TEXT("Hit actor: %s"), *HitActor->GetActorNameOrLabel());
 	}
-
-	
+	else
+	{
+		UE_LOG(LogTemp, Display, TEXT("No actor hit"));
+	}
 }
 
-void UGrabber::PrintDamage(const float& Damage)
-{
-	UE_LOG(LogTemp, Display, TEXT("Damage is: %f"), Damage);
-}
 
-bool UGrabber::HasDamage(float& OutDamage)
-{
-	OutDamage = 5;
-	return true;
-}
 
