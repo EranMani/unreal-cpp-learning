@@ -262,4 +262,6 @@ Unreal C++
 		  compile time arguments: <>
 		  runtime arguments: ()
 		  [NOTE] When you try to use the arrow operator or dereferncing operator on a null pointer, it will crash the engine
+		  [FUNCTION] PhysicsHandler->SetTargetLocationAndRotation()
+		  [FUNCTION] PhysicsHandler-> GrabComponentAtLocationWithRotation()
 		  
