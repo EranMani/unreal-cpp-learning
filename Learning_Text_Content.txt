@@ -224,6 +224,9 @@ Unreal C++
 	[NOTE] The 'include' line allows us to copy in the definitions from a particular file
 		#include math
 		
+	* Null pointer
+		- how to create a null pointer? use the keyword: nullptr
+		
 	* ULevel
 		- a collection of the actors that we should bring into the UWorld
 		- you may load in multiple levels into a single world. That is because often we have these streaming levels, a very large levels where we
@@ -247,3 +250,15 @@ Unreal C++
 		UPROPERTY - for exposing variables
 		UFUNCTION - for exposing functions
 		BLUEPRINT CALLABLE - this function now becomes a node that blueprint has access to
+		
+	* Physics
+		- In order to grab hold of an object, we need to interact with the physics system. There is a component we can use called - physics handle,
+		  which allows to grab physical objects and tell them where we want to be in the world, in a way that it acknowledges physical constraints
+		  so it doesnt pass through walls
+		  [COMPONENT] Physics handle
+		  [FUNCTION] FindComponentByClass<Type>() - a template function, means that you can pass it some parameters that actually get evaluated when
+													you compile. This function returns a pointer to the type you added between brackets
+		  compile time arguments: <>
+		  runtime arguments: ()
+		  [NOTE] When you try to use the arrow operator or dereferncing operator on a null pointer, it will crash the engine
+		  
