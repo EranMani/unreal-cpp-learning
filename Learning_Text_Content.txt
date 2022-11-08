@@ -185,6 +185,7 @@ Unreal C++
 	* GetForwardVector()
 	* DrawDebugLine()
 	* SweepSingleByChannel()
+	* DrawDebugSphere()
 	
 	[C++ Compilation steps]
 	* Start with the code -> C++ files, header files, etc. These get fed into a tool called the UNREAL HEADER TOOL
